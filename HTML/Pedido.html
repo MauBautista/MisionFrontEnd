@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pedido Launch Cake</title>
+</head>
+<style>
+    *{
+        background-color: #dbd3d3;
+    }
+    h1{
+        color: #5c5e05;
+    }
+    h3{
+        background-color: #fc4f89;
+    }
+</style>
+<body>
+    <div align="center">
+        <img src="https://lh6.googleusercontent.com/Zp8TnyPpQ3OZMCT3D2-aS7quxjhLr_d60lSdG235-UJ8OamULUZe9thupEXkNm1MWzgFfTQwlNEld6ZTUH1q=w1920-h969"  alt="Logo Launch Cake" width="400px" >
+        <h1>Tu pedido</h1>
+    </div>    
+    
+
+    <hr>
+    <a href="./principal.html">Volver al inicio</a>
+    <ul><h2>Ingrese los datos de su pedido en el siguiente formulario</h2></ul>
+
+<form action="/accion.js" id="form1" method="post">
+
+    <br><br>
+    <h3>Datos personales</h3>
+    <label for="nombre">Ingrese su nombre</label><br>
+    <input type="text" id="nombre" name="nombre" class="input">
+    <br><br>
+    <label for="telefono">Ingrese su teléfono</label><br>
+    <input type="tel" id="telefono" name="telefono" class="input">
+    <br><br>
+    <label for="correo">Ingrese su correo</label><br>
+    <input type="email" id="correo" name="correo" class="input">
+    
+    <br><br>
+
+    <section>
+        <h3>Seleccione los sabores que desea llevar</h3>
+        <input type="checkbox" id="sabor1" name="sabor1" value="Chocolate" class="check">
+        <label for="sabor1" class="seleccion">Chocolate</label>
+        <br>
+        <input type="checkbox" id="sabor2" name="sabor2" value="Vainilla" class="check">
+        <label for="sabor2" class="seleccion">Vainilla</label>
+        <br>
+        <input type="checkbox" id="sabor3" name="sabor3" value="Fresa" class="check">
+        <label for="sabor3" class="seleccion">Fresa</label>
+        <br>
+        <input type="checkbox" id="sabor4" name="sabor4" value="Chocoflan" class="check">
+        <label for="sabor4" class="seleccion">Chocoflan</label>
+        <br>
+        <input type="checkbox" id="sabor5" name="sabor5" value="Cafe" class="check">
+        <label for="sabor5" class="seleccion">Cafe</label>
+        <br>
+        <input type="checkbox" id="sabor6" name="sabor6" value="Rompope" class="check">
+        <label for="sabor6" class="seleccion">Rompope</label>
+        <br>
+        <input type="checkbox" id="sabor7" name="sabor7" value="Moka"  class="check">
+        <label for="sabor7" class="seleccion">Moka</label>
+        <br>
+        <input type="checkbox" id="sabor8" name="sabor8" value="Dulce_de_leche" class="check">
+        <label for="sabor8" class="seleccion">Dulce de leche</label>
+        <br>
+        <input type="checkbox" id="sabor9" name="sabor9" value="Tres_Leches" class="check">
+        <label for="sabor9" class="seleccion">Tres leches</label>
+        <br>
+    </section>
+
+    
+    <section class="selec3">
+        <h3>Añade Topics a tu pastel</h3>
+        <input type="checkbox" id="adorno1" name="adorno1" value="Cobertura_chocolate" class="check">
+        <label for="adorno1" class="seleccion">Cobertura de chocolate</label>
+        <br>
+        <input type="checkbox" id="adorno2" name="adorno2" value="Fondant_malvavisco" class="check">
+        <label for="adorno2" class="seleccion">Fondant de base de malvavisco</label>
+        <br>
+        <input type="checkbox" id="adorno3" name="adorno3" value="Fondant_chocolate" class="check">
+        <label for="adorno3" class="seleccion">Fondant de chocolate</label>
+        <br>
+        <input type="checkbox" id="adorno4" name="adorno4" value="Fondant_chocolate_blanco" class="check">
+        <label for="adorno4" class="seleccion">Fondant de chocolate blanco</label>
+        <br>
+        <input type="checkbox" id="adorno5" name="adorno5" value="Salsa_caramelo" class="check">
+        <label for="adorno5" class="seleccion">Salsa de caramelo</label>
+        <br>
+        <input type="checkbox" id="adorno6" name="sadorno6" value="Betun_vainilla" class="check">
+        <label for="adorno6" class="seleccion">Betún de vainilla</label>
+        <br>
+        <input type="checkbox" id="adorno7" name="adorno7" value="Betun_chocolate" class="check">
+        <label for="adorno7" class="seleccion">Betún de chocolate</label>
+        <br>
+        <input type="checkbox" id="adorno9" name="adorno9" value="Escarchado" class="check">
+        <label for="adorno9" class="seleccion">Escarchado</label>
+        <br>
+        <input type="checkbox" id="adorno10" nsame="adorno10" value="Glaseado" class="check">
+        <label for="adorno10" class="seleccion">Glaseado</label>
+        <br>
+        <input type="checkbox" id="adorno11" name="adorno11" value="Frutas" class="check">
+        <label for="adorno11" class="seleccion">Frutas</label>
+        <br>
+        <input type="checkbox" id="adorno12" name="adorno12" value="Chispas" class="check">
+        <label for="adorno12" class="seleccion">Chispas</label>
+        <br>
+    </section>
+
+    <section class="selec2">
+        <h3>Seleccione el tamaño</h3>
+        <input type="radio" id="grande" name="tamaño" value="Grande" class="check">
+        <label for="grande" class="seleccion">Grande (Gr)</label><br>
+        <input type="radio" id="mediano" name="tamaño" value="Mediano" class="check">
+        <label for="mediano" class="seleccion">Mediano (Med)</label><br>
+        <input type="radio" id="chico" name="tamaño" value="Chico" class="check">
+        <label for="chico" class="seleccion">Chico (Ch)</label><br><br>
+    </section>
+
+
+    
+    <input type="reset" id="restablecer" name="restablecer" value="Restablecer">
+    <input type="submit" id="enviar" name="enviar" value="Enviar" onclick="alert('Su pedido se ha enviado correctamente');"><br>
+<br><br>
+</form>
+<a href="./principal.html">Volver al inicio</a>
+<br>
+<hr>
+
+<dl>
+    <dt>Dirección</dt>
+    <dd>Calle 11 Poniente, San Pedro Cholula, Puebla, Puebla C.P. 72750</dd>
+
+    <dt>Teléfono</dt>
+    <dd>+52 222 333 444</dd>
+    <dt>Horarios de atención</dt>
+    <dd>Lunes a Viernes de 10: 00 am a 20: 00 pm</dd>
+    <dd>Sábados: 10: 00 am a 17: 00 pm</dd>
+</dl>
+
+
+</body>
+</html>
